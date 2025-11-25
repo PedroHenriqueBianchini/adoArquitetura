@@ -11,6 +11,11 @@ public class EnemyPrototypeRegistry {
 
     private EnemyPrototypeRegistry() { }
 
+    public Enemy getPrototype(String name) {
+        return prototypes.get(name);
+    }
+
+
 
     public static EnemyPrototypeRegistry getInstance() { return INSTANCE; }
 

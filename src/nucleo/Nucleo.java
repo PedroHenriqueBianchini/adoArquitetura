@@ -6,6 +6,9 @@ import fabrica.Factory;
 import prototype.Enemy;
 import prototype.EnemyPrototypeRegistry;
 import estrategia.*;
+import proxy.GeradorEnemy;
+import proxy.GeradorProxy;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +16,8 @@ import java.util.List;
 public class Nucleo {
 
     private static final Nucleo INSTANCE = new Nucleo();
+    private final GeradorEnemy geradorEnemy = new GeradorProxy();
+
 
     private final List<PersonagemBase> players = new ArrayList<>();
     private final List<Enemy> enemies = new ArrayList<>();
@@ -30,10 +35,11 @@ public class Nucleo {
     }
 
     public Enemy spawnEnemy(String prototypeName) {
-        Enemy e = EnemyPrototypeRegistry.getInstance().createFromPrototype(prototypeName);
+        Enemy e = geradorEnemy.spawn(prototypeName);
         if (e != null) enemies.add(e);
         return e;
     }
+
 
     public void status() {
         System.out.println("=== Game Status ===");
