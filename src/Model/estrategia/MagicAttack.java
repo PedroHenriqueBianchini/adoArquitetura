@@ -1,6 +1,7 @@
-package estrategia;
-import personagens.PersonagemBase;
+package Model.estrategia;
 
+
+import Model.personagens.PersonagemBase;
 
 public class MagicAttack implements AttackStrategy {
     @Override

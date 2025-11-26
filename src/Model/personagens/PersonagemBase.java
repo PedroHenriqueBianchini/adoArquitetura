@@ -1,6 +1,6 @@
-package personagens;
+package Model.personagens;
 
-import estrategia.AttackStrategy;
+import Model.estrategia.AttackStrategy;
 
 public class PersonagemBase {
     protected String name;

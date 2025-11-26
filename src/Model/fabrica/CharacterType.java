@@ -1,4 +1,4 @@
-package fabrica;
+package Model.fabrica;
 
 public enum CharacterType {
     GUERREIRO,

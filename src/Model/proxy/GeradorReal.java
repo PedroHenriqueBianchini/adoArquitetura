@@ -1,7 +1,7 @@
-package proxy;
+package Model.proxy;
 
-import prototype.Enemy;
-import prototype.EnemyPrototypeRegistry;
+import Model.prototype.Enemy;
+import Model.prototype.EnemyPrototypeRegistry;
 
 public class GeradorReal implements GeradorEnemy {
 

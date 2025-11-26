@@ -1,4 +1,4 @@
-package personagens;
+package Model.personagens;
 
 public class Guerreiro extends PersonagemBase {
     public Guerreiro(String name) {

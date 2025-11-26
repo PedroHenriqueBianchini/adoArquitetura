@@ -1,9 +1,9 @@
-package fabrica;
+package Model.fabrica;
 
-import personagens.Arqueiro;
-import personagens.Guerreiro;
-import personagens.Mago;
-import personagens.PersonagemBase;
+import Model.personagens.Arqueiro;
+import Model.personagens.Guerreiro;
+import Model.personagens.Mago;
+import Model.personagens.PersonagemBase;
 
 public class Factory {
     public static PersonagemBase createCharacter(CharacterType type, String name) {

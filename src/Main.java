@@ -1,8 +1,7 @@
-import nucleo.Nucleo;
+import Controller.GameController;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        System.out.println("== Iniciando Sistema de Batalha ==");
-        Nucleo.getInstance().main(args);
+    public static void main(String[] args) {
+        new GameController().startGame();
     }
 }

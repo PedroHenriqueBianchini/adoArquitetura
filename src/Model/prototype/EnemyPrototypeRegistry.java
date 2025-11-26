@@ -1,4 +1,4 @@
-package prototype;
+package Model.prototype;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

@@ -1,4 +1,4 @@
-package personagens;
+package Model.personagens;
 
 
 public class Arqueiro extends PersonagemBase {

@@ -1,7 +1,7 @@
-package estrategia;
+package Model.estrategia;
 
-import personagens.PersonagemBase;
 
+import Model.personagens.PersonagemBase;
 
 public interface AttackStrategy {
     // retorna uma string descritiva da ação

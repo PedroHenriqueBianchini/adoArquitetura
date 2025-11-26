@@ -1,4 +1,4 @@
-package prototype;
+package Model.prototype;
 
 
 public class Enemy implements Cloneable {
